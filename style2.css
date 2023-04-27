@@ -1,0 +1,56 @@
+.container {
+    justify-content: center;
+    gap: 50px;
+   display: flex;
+    align-items: center;
+    height: 70vh;
+    
+  }
+  body{
+    background: #34495e;
+  }
+  
+  .item {
+    text-align: center;
+   max-width: 400px;
+   
+  }
+  .titulo{
+    text-align: center;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+  }
+  
+  .item img {
+    
+    max-width: 100%;
+    max-height: 200%;
+  }
+  
+  .item p {
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .efecto {
+    transition: all 0.3s ease-in-out; /* Agregamos una transición suave al efecto */
+  }
+  
+  .efecto:hover {
+    transform: scale(1.1); /* Hacemos la imagen un 10% más grande */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3); /* Agregamos una sombra */
+  }
+  
+
+  @media only screen and (min-width: 768px) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
